@@ -30,7 +30,7 @@ echo expath:%expath%
 echo date:%date%
 echo database:%database%
 echo ip:%ip%
-————————————————
-版权声明：本文为CSDN博主「kingdom♚蓝调」的原创文章，遵循 CC 4.0 BY-SA 版权协议，转载请附上原文出处链接及本声明。
-原文链接：https://blog.csdn.net/qq_24400639/article/details/68927103
+echo %GIT_COMMIT%
+echo %GIT_BRANCH%
+echo %WORKSPACE%
 "C:\Program Files\Salesforce CLI\bin\sfdx" force:source:deploy -x ./manifest/%deployPath%.xml -u mycitestpartial --testlevel RunSpecifiedTests --runtests LWCUploadTPACtlTest
