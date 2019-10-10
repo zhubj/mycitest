@@ -1,0 +1,2 @@
+deployPath=package2
+testclass=AccountProcessBatchTest,AccountGroupItemBatchTest
