@@ -33,4 +33,4 @@ echo ip:%ip%
 echo %GIT_COMMIT%
 echo %GIT_BRANCH%
 echo %WORKSPACE%
-"C:\Program Files\Salesforce CLI\bin\sfdx" force:source:deploy -x ./manifest/%deployPath%.xml -u mycitestpartial --testlevel RunSpecifiedTests --runtests LWCUploadTPACtlTest
+"C:\Program Files\Salesforce CLI\bin\sfdx" force:source:deploy -x ./manifest/%deployPath%.xml -u mycitestpartial --testlevel RunSpecifiedTests --runtests %testclass%
