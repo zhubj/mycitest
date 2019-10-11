@@ -1,4 +1,4 @@
-echo start
+echo start1
 
 for /f "tokens=1,2 delims==" %%i in (deployeesettings.txt) do (
 if "%%i"=="deployPath" set deployPath=%%j
