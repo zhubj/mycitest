@@ -1,5 +1,5 @@
 echo start
-
+chdir
 for /f "tokens=1,2 delims==" %%i in (./deployeebat/deployeesettings.txt) do (
 if "%%i"=="deployPath" set deployPath=%%j
 if "%%i"=="testclass" set testclass=%%j
