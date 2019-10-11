@@ -34,3 +34,8 @@ echo %GIT_COMMIT%
 echo %GIT_BRANCH%
 echo %WORKSPACE%
 "C:\Program Files\Salesforce CLI\bin\sfdx" force:source:deploy -x ./manifest/%deployPath%.xml -u mycitestpartial --testlevel RunSpecifiedTests --runtests %testclass%
+set result1=%ERRORLEVEL%
+echo %result1%
+"C:\Program Files\Salesforce CLI\bin\sfdx" force:source:deploy -x ./manifest/%deployPath%.xml -u mycitestpartial --testlevel RunSpecifiedTests --runtests test.cls
+set result2=%ERRORLEVEL%
+echo %result2%
