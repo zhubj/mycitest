@@ -33,7 +33,7 @@ echo testclass:%testclass%
 echo %GIT_COMMIT%
 echo %GIT_BRANCH%
 echo %WORKSPACE%
-"C:\Program Files\Salesforce CLI\bin\sfdx" force:source:deploy -x ./manifest/%deployPath%.xml -u mycitestpartial --testlevel RunSpecifiedTests --runtests %testclass%
+"C:\Program Files\Salesforce CLI\bin\sfdx" force:source:deploy -x ./manifest/%deployPath%.xml -u mycitestpartial --testlevel RunSpecifiedTests --runtests %testclass
 ::REM set result1=%ERRORLEVEL%
 ::REM echo %result1%
 ::REM  "C:\Program Files\Salesforce CLI\bin\sfdx" force:source:deploy -x ./manifest/%deployPath%.xml -u mycitestpartial --testlevel RunSpecifiedTests --runtests test.cls
