@@ -11,4 +11,5 @@ echo testclass:%testclass%
 echo %GIT_COMMIT%
 echo %GIT_BRANCH%
 echo %WORKSPACE%
+::只验证，不部署到sfdc
 "C:\Program Files\Salesforce CLI\bin\sfdx" force:source:deploy -x ./manifest/%deployPath%.xml -u mycitestpartial --testlevel RunSpecifiedTests --runtests %testclass%  --checkonly
