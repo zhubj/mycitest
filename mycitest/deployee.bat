@@ -24,18 +24,18 @@ if "%%i"=="database" set database=%%j
 ::rem set "path=%3"
 echo deployPath:%deployPath%
 echo testclass:%testclass%
-echo user:%user%
-echo password:%password%
-echo expath:%expath%
-echo date:%date%
-echo database:%database%
-echo ip:%ip%
+REM echo user:%user%
+REM echo password:%password%
+REM echo expath:%expath%
+REM echo date:%date%
+REM echo database:%database%
+REM echo ip:%ip%
 echo %GIT_COMMIT%
 echo %GIT_BRANCH%
 echo %WORKSPACE%
 "C:\Program Files\Salesforce CLI\bin\sfdx" force:source:deploy -x ./manifest/%deployPath%.xml -u mycitestpartial --testlevel RunSpecifiedTests --runtests %testclass%
-set result1=%ERRORLEVEL%
-echo %result1%
-"C:\Program Files\Salesforce CLI\bin\sfdx" force:source:deploy -x ./manifest/%deployPath%.xml -u mycitestpartial --testlevel RunSpecifiedTests --runtests test.cls
-set result2=%ERRORLEVEL%
-echo %result2%
+REM set result1=%ERRORLEVEL%
+REM echo %result1%
+REM "C:\Program Files\Salesforce CLI\bin\sfdx" force:source:deploy -x ./manifest/%deployPath%.xml -u mycitestpartial --testlevel RunSpecifiedTests --runtests test.cls
+REM set result2=%ERRORLEVEL%
+REM echo %result2%
